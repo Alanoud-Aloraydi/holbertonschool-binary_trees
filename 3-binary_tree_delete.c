@@ -1,5 +1,5 @@
 #include "binary_trees.h"
-
+#include <stdlib.h>
 /**
  * binary_tree_delete - Deletes a tree
  * @tree: Pointer to the tree to be deleted
