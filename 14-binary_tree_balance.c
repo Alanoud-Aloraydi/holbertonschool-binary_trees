@@ -38,8 +38,14 @@ int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (tree)
 	{
-		/* Cast to (int) to ensure the result can be negative */
-		return ((int)binary_tree_height(tree->left) - (int)binary_tree_height(tree->right));
+		/**
+		 *  Cast to (int) to ensure the result can be negative
+		 *  Store heights in variables to keep return line under 80 chars
+		 */
+		left = (int)binary_tree_height(tree->left);
+		right = (int)binary_tree_height(tree->right);
+
+		return (left - right);
 	}
 
 	return (0);
